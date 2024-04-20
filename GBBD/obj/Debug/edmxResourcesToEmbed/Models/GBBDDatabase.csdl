@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GBBD_DatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="GBBD_DatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Car" EntityType="GBBD_DatabaseModel.Car" />
+    <EntitySet Name="Company" EntityType="GBBD_DatabaseModel.Company" />
+    <EntitySet Name="Inspector" EntityType="GBBD_DatabaseModel.Inspector" />
+    <EntitySet Name="Job" EntityType="GBBD_DatabaseModel.Job" />
+    <EntitySet Name="Shtraf" EntityType="GBBD_DatabaseModel.Shtraf" />
+    <EntitySet Name="Status" EntityType="GBBD_DatabaseModel.Status" />
+    <EntitySet Name="sysdiagrams" EntityType="GBBD_DatabaseModel.sysdiagrams" />
+    <EntitySet Name="User" EntityType="GBBD_DatabaseModel.User" />
+    <AssociationSet Name="FK_Car_User" Association="GBBD_DatabaseModel.FK_Car_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Car" EntitySet="Car" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Shtraf_Car" Association="GBBD_DatabaseModel.FK_Shtraf_Car">
+      <End Role="Car" EntitySet="Car" />
+      <End Role="Shtraf" EntitySet="Shtraf" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Company" Association="GBBD_DatabaseModel.FK_User_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Job" Association="GBBD_DatabaseModel.FK_User_Job">
+      <End Role="Job" EntitySet="Job" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Shtraf_Status" Association="GBBD_DatabaseModel.FK_Shtraf_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="Shtraf" EntitySet="Shtraf" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="Number" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="GBBD_DatabaseModel.FK_Car_User" FromRole="Car" ToRole="User" />
+    <NavigationProperty Name="Shtraf" Relationship="GBBD_DatabaseModel.FK_Shtraf_Car" FromRole="Car" ToRole="Shtraf" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="GBBD_DatabaseModel.FK_User_Company" FromRole="Company" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Inspector">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Job">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="GBBD_DatabaseModel.FK_User_Job" FromRole="Job" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Shtraf">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CarId" Type="Int32" Nullable="false" />
+    <Property Name="Region" Type="Int32" />
+    <Property Name="LicenceNum" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="StatusId" Type="Int32" />
+    <NavigationProperty Name="Car" Relationship="GBBD_DatabaseModel.FK_Shtraf_Car" FromRole="Shtraf" ToRole="Car" />
+    <NavigationProperty Name="Status" Relationship="GBBD_DatabaseModel.FK_Shtraf_Status" FromRole="Shtraf" ToRole="Status" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Shtraf" Relationship="GBBD_DatabaseModel.FK_Shtraf_Status" FromRole="Status" ToRole="Shtraf" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Surname" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="MiddleName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Seria" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="Number" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="PostCode" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="AddLife" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyId" Type="Int32" />
+    <Property Name="JobId" Type="Int32" />
+    <Property Name="Phone" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Car" Relationship="GBBD_DatabaseModel.FK_Car_User" FromRole="User" ToRole="Car" />
+    <NavigationProperty Name="Company" Relationship="GBBD_DatabaseModel.FK_User_Company" FromRole="User" ToRole="Company" />
+    <NavigationProperty Name="Job" Relationship="GBBD_DatabaseModel.FK_User_Job" FromRole="User" ToRole="Job" />
+  </EntityType>
+  <Association Name="FK_Car_User">
+    <End Type="GBBD_DatabaseModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="GBBD_DatabaseModel.Car" Role="Car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Car">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Shtraf_Car">
+    <End Type="GBBD_DatabaseModel.Car" Role="Car" Multiplicity="1" />
+    <End Type="GBBD_DatabaseModel.Shtraf" Role="Shtraf" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Car">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Shtraf">
+        <PropertyRef Name="CarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Company">
+    <End Type="GBBD_DatabaseModel.Company" Role="Company" Multiplicity="0..1" />
+    <End Type="GBBD_DatabaseModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Job">
+    <End Type="GBBD_DatabaseModel.Job" Role="Job" Multiplicity="0..1" />
+    <End Type="GBBD_DatabaseModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Job">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="JobId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Shtraf_Status">
+    <End Type="GBBD_DatabaseModel.Status" Role="Status" Multiplicity="0..1" />
+    <End Type="GBBD_DatabaseModel.Shtraf" Role="Shtraf" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Shtraf">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
