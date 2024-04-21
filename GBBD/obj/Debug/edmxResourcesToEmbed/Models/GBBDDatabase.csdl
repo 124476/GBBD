@@ -3,12 +3,15 @@
   <EntityContainer Name="GBBD_DatabaseEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Car" EntityType="GBBD_DatabaseModel.Car" />
     <EntitySet Name="Company" EntityType="GBBD_DatabaseModel.Company" />
+    <EntitySet Name="HistoryStatus" EntityType="GBBD_DatabaseModel.HistoryStatus" />
     <EntitySet Name="Inspector" EntityType="GBBD_DatabaseModel.Inspector" />
     <EntitySet Name="Job" EntityType="GBBD_DatabaseModel.Job" />
     <EntitySet Name="Shtraf" EntityType="GBBD_DatabaseModel.Shtraf" />
     <EntitySet Name="Status" EntityType="GBBD_DatabaseModel.Status" />
     <EntitySet Name="sysdiagrams" EntityType="GBBD_DatabaseModel.sysdiagrams" />
     <EntitySet Name="User" EntityType="GBBD_DatabaseModel.User" />
+    <EntitySet Name="VYStatus" EntityType="GBBD_DatabaseModel.VYStatus" />
+    <EntitySet Name="Ydovstvorenie" EntityType="GBBD_DatabaseModel.Ydovstvorenie" />
     <AssociationSet Name="FK_Car_User" Association="GBBD_DatabaseModel.FK_Car_User">
       <End Role="User" EntitySet="User" />
       <End Role="Car" EntitySet="Car" />
@@ -21,6 +24,14 @@
       <End Role="Company" EntitySet="Company" />
       <End Role="User" EntitySet="User" />
     </AssociationSet>
+    <AssociationSet Name="FK_HistoryStatus_VYStatus" Association="GBBD_DatabaseModel.FK_HistoryStatus_VYStatus">
+      <End Role="VYStatus" EntitySet="VYStatus" />
+      <End Role="HistoryStatus" EntitySet="HistoryStatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HistoryStatus_Ydovstvorenie" Association="GBBD_DatabaseModel.FK_HistoryStatus_Ydovstvorenie">
+      <End Role="Ydovstvorenie" EntitySet="Ydovstvorenie" />
+      <End Role="HistoryStatus" EntitySet="HistoryStatus" />
+    </AssociationSet>
     <AssociationSet Name="FK_User_Job" Association="GBBD_DatabaseModel.FK_User_Job">
       <End Role="Job" EntitySet="Job" />
       <End Role="User" EntitySet="User" />
@@ -28,6 +39,14 @@
     <AssociationSet Name="FK_Shtraf_Status" Association="GBBD_DatabaseModel.FK_Shtraf_Status">
       <End Role="Status" EntitySet="Status" />
       <End Role="Shtraf" EntitySet="Shtraf" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ydovstvorenie_User" Association="GBBD_DatabaseModel.FK_Ydovstvorenie_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Ydovstvorenie" EntitySet="Ydovstvorenie" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ydovstvorenie_VYStatus" Association="GBBD_DatabaseModel.FK_Ydovstvorenie_VYStatus">
+      <End Role="VYStatus" EntitySet="VYStatus" />
+      <End Role="Ydovstvorenie" EntitySet="Ydovstvorenie" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="Car">
@@ -47,6 +66,19 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="User" Relationship="GBBD_DatabaseModel.FK_User_Company" FromRole="Company" ToRole="User" />
+  </EntityType>
+  <EntityType Name="HistoryStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="YdId" Type="Int32" />
+    <Property Name="StatusId" Type="Int32" />
+    <Property Name="DateStart" Type="DateTime" Precision="0" />
+    <Property Name="DateEnd" Type="DateTime" Precision="0" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="VYStatus" Relationship="GBBD_DatabaseModel.FK_HistoryStatus_VYStatus" FromRole="HistoryStatus" ToRole="VYStatus" />
+    <NavigationProperty Name="Ydovstvorenie" Relationship="GBBD_DatabaseModel.FK_HistoryStatus_Ydovstvorenie" FromRole="HistoryStatus" ToRole="Ydovstvorenie" />
   </EntityType>
   <EntityType Name="Inspector">
     <Key>
@@ -118,6 +150,32 @@
     <NavigationProperty Name="Car" Relationship="GBBD_DatabaseModel.FK_Car_User" FromRole="User" ToRole="Car" />
     <NavigationProperty Name="Company" Relationship="GBBD_DatabaseModel.FK_User_Company" FromRole="User" ToRole="Company" />
     <NavigationProperty Name="Job" Relationship="GBBD_DatabaseModel.FK_User_Job" FromRole="User" ToRole="Job" />
+    <NavigationProperty Name="Ydovstvorenie" Relationship="GBBD_DatabaseModel.FK_Ydovstvorenie_User" FromRole="User" ToRole="Ydovstvorenie" />
+  </EntityType>
+  <EntityType Name="VYStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="HistoryStatus" Relationship="GBBD_DatabaseModel.FK_HistoryStatus_VYStatus" FromRole="VYStatus" ToRole="HistoryStatus" />
+    <NavigationProperty Name="Ydovstvorenie" Relationship="GBBD_DatabaseModel.FK_Ydovstvorenie_VYStatus" FromRole="VYStatus" ToRole="Ydovstvorenie" />
+  </EntityType>
+  <EntityType Name="Ydovstvorenie">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="LicenceDate" Type="DateTime" Precision="0" />
+    <Property Name="ExpireDate" Type="DateTime" Precision="0" />
+    <Property Name="Categories" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="LicenceSeries" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="LicenceNumber" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="StatusId" Type="Int32" />
+    <NavigationProperty Name="HistoryStatus" Relationship="GBBD_DatabaseModel.FK_HistoryStatus_Ydovstvorenie" FromRole="Ydovstvorenie" ToRole="HistoryStatus" />
+    <NavigationProperty Name="User" Relationship="GBBD_DatabaseModel.FK_Ydovstvorenie_User" FromRole="Ydovstvorenie" ToRole="User" />
+    <NavigationProperty Name="VYStatus" Relationship="GBBD_DatabaseModel.FK_Ydovstvorenie_VYStatus" FromRole="Ydovstvorenie" ToRole="VYStatus" />
   </EntityType>
   <Association Name="FK_Car_User">
     <End Type="GBBD_DatabaseModel.User" Role="User" Multiplicity="0..1" />
@@ -155,6 +213,30 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_HistoryStatus_VYStatus">
+    <End Type="GBBD_DatabaseModel.VYStatus" Role="VYStatus" Multiplicity="0..1" />
+    <End Type="GBBD_DatabaseModel.HistoryStatus" Role="HistoryStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VYStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HistoryStatus">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HistoryStatus_Ydovstvorenie">
+    <End Type="GBBD_DatabaseModel.Ydovstvorenie" Role="Ydovstvorenie" Multiplicity="0..1" />
+    <End Type="GBBD_DatabaseModel.HistoryStatus" Role="HistoryStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ydovstvorenie">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HistoryStatus">
+        <PropertyRef Name="YdId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_User_Job">
     <End Type="GBBD_DatabaseModel.Job" Role="Job" Multiplicity="0..1" />
     <End Type="GBBD_DatabaseModel.User" Role="User" Multiplicity="*" />
@@ -175,6 +257,30 @@
         <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="Shtraf">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ydovstvorenie_User">
+    <End Type="GBBD_DatabaseModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="GBBD_DatabaseModel.Ydovstvorenie" Role="Ydovstvorenie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ydovstvorenie">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ydovstvorenie_VYStatus">
+    <End Type="GBBD_DatabaseModel.VYStatus" Role="VYStatus" Multiplicity="0..1" />
+    <End Type="GBBD_DatabaseModel.Ydovstvorenie" Role="Ydovstvorenie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VYStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ydovstvorenie">
         <PropertyRef Name="StatusId" />
       </Dependent>
     </ReferentialConstraint>

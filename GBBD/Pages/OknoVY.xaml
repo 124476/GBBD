@@ -1,0 +1,50 @@
+﻿<Page x:Class="GBBD.Pages.OknoVY"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GBBD.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="OknoVY"
+      Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DataGrid Name="DataVY" FontSize="17" AutoGenerateColumns="False" IsReadOnly="True" Grid.Row="0">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Background="{Binding VYStatus.VYColor}" Width="50"></TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Status" Binding="{Binding VYStatus.Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Licence Date" Binding="{Binding LicenceDate}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Expire Date" Binding="{Binding ExpireDate}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Categories" Binding="{Binding Categories}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Licence Series" Binding="{Binding LicenceSeries}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Licence Number" Binding="{Binding LicenceNumber}"></DataGridTextColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="GotVY" Click="GotVY_Click" FontSize="17" Content="Просмотр"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="CopyVy" Click="CopyVy_Click"  FontSize="17" Content="Скачать"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Name="New" Content="Новое удостоверение" Width="300" FontSize="17" Grid.Row="1" Margin="0,10,0,10" Click="New_Click"></Button>
+    </Grid>
+</Page>

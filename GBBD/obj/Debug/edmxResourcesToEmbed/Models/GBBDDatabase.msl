@@ -18,6 +18,18 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="HistoryStatus">
+      <EntityTypeMapping TypeName="GBBD_DatabaseModel.HistoryStatus">
+        <MappingFragment StoreEntitySet="HistoryStatus">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+          <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="YdId" ColumnName="YdId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Inspector">
       <EntityTypeMapping TypeName="GBBD_DatabaseModel.Inspector">
         <MappingFragment StoreEntitySet="Inspector">
@@ -84,6 +96,28 @@
           <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VYStatus">
+      <EntityTypeMapping TypeName="GBBD_DatabaseModel.VYStatus">
+        <MappingFragment StoreEntitySet="VYStatus">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ydovstvorenie">
+      <EntityTypeMapping TypeName="GBBD_DatabaseModel.Ydovstvorenie">
+        <MappingFragment StoreEntitySet="Ydovstvorenie">
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="LicenceNumber" ColumnName="LicenceNumber" />
+          <ScalarProperty Name="LicenceSeries" ColumnName="LicenceSeries" />
+          <ScalarProperty Name="Categories" ColumnName="Categories" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+          <ScalarProperty Name="LicenceDate" ColumnName="LicenceDate" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>

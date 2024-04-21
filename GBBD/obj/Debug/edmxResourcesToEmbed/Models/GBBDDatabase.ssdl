@@ -15,6 +15,17 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="250" />
   </EntityType>
+  <EntityType Name="HistoryStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="YdId" Type="int" />
+    <Property Name="StatusId" Type="int" />
+    <Property Name="DateStart" Type="date" />
+    <Property Name="DateEnd" Type="date" />
+    <Property Name="Comment" Type="nvarchar(max)" />
+  </EntityType>
   <EntityType Name="Inspector">
     <Key>
       <PropertyRef Name="Id" />
@@ -79,6 +90,26 @@
     <Property Name="Photo" Type="image" />
     <Property Name="Description" Type="nvarchar" MaxLength="250" />
   </EntityType>
+  <EntityType Name="VYStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="Ydovstvorenie">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="LicenceDate" Type="date" />
+    <Property Name="ExpireDate" Type="date" />
+    <Property Name="Categories" Type="nvarchar" MaxLength="150" />
+    <Property Name="LicenceSeries" Type="nvarchar" MaxLength="150" />
+    <Property Name="LicenceNumber" Type="nvarchar" MaxLength="6" />
+    <Property Name="StatusId" Type="int" />
+  </EntityType>
   <Association Name="FK_Car_User">
     <End Role="User" Type="Self.User" Multiplicity="0..1" />
     <End Role="Car" Type="Self.Car" Multiplicity="*" />
@@ -88,6 +119,30 @@
       </Principal>
       <Dependent Role="Car">
         <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HistoryStatus_VYStatus">
+    <End Role="VYStatus" Type="Self.VYStatus" Multiplicity="0..1" />
+    <End Role="HistoryStatus" Type="Self.HistoryStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VYStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HistoryStatus">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HistoryStatus_Ydovstvorenie">
+    <End Role="Ydovstvorenie" Type="Self.Ydovstvorenie" Multiplicity="0..1" />
+    <End Role="HistoryStatus" Type="Self.HistoryStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ydovstvorenie">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HistoryStatus">
+        <PropertyRef Name="YdId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -139,18 +194,53 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Ydovstvorenie_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Ydovstvorenie" Type="Self.Ydovstvorenie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ydovstvorenie">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ydovstvorenie_VYStatus">
+    <End Role="VYStatus" Type="Self.VYStatus" Multiplicity="0..1" />
+    <End Role="Ydovstvorenie" Type="Self.Ydovstvorenie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VYStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ydovstvorenie">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="Хранилище GBBD_DatabaseModelContainer">
     <EntitySet Name="Car" EntityType="Self.Car" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HistoryStatus" EntityType="Self.HistoryStatus" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Inspector" EntityType="Self.Inspector" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Job" EntityType="Self.Job" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Shtraf" EntityType="Self.Shtraf" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VYStatus" EntityType="Self.VYStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Ydovstvorenie" EntityType="Self.Ydovstvorenie" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_Car_User" Association="Self.FK_Car_User">
       <End Role="User" EntitySet="User" />
       <End Role="Car" EntitySet="Car" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HistoryStatus_VYStatus" Association="Self.FK_HistoryStatus_VYStatus">
+      <End Role="VYStatus" EntitySet="VYStatus" />
+      <End Role="HistoryStatus" EntitySet="HistoryStatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HistoryStatus_Ydovstvorenie" Association="Self.FK_HistoryStatus_Ydovstvorenie">
+      <End Role="Ydovstvorenie" EntitySet="Ydovstvorenie" />
+      <End Role="HistoryStatus" EntitySet="HistoryStatus" />
     </AssociationSet>
     <AssociationSet Name="FK_Shtraf_Car" Association="Self.FK_Shtraf_Car">
       <End Role="Car" EntitySet="Car" />
@@ -167,6 +257,14 @@
     <AssociationSet Name="FK_User_Job" Association="Self.FK_User_Job">
       <End Role="Job" EntitySet="Job" />
       <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ydovstvorenie_User" Association="Self.FK_Ydovstvorenie_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Ydovstvorenie" EntitySet="Ydovstvorenie" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ydovstvorenie_VYStatus" Association="Self.FK_Ydovstvorenie_VYStatus">
+      <End Role="VYStatus" EntitySet="VYStatus" />
+      <End Role="Ydovstvorenie" EntitySet="Ydovstvorenie" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

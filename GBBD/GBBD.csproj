@@ -64,6 +64,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Windows\OknoVYCopy.xaml.cs">
+      <DependentUpon>OknoVYCopy.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -84,6 +87,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\OknoHistory.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\OknoMain.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -96,11 +103,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\OknoNewVY.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\OknoOpen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\OknoShtraf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\OknoVY.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\OknoVYCopy.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -127,12 +146,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GBBDDatabase.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\HistoryStatus.cs">
+      <DependentUpon>GBBDDatabase.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Inspector.cs">
       <DependentUpon>GBBDDatabase.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Job.cs">
       <DependentUpon>GBBDDatabase.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Partials\VYStatus.cs" />
     <Compile Include="Models\Shtraf.cs">
       <DependentUpon>GBBDDatabase.tt</DependentUpon>
     </Compile>
@@ -145,11 +168,20 @@
     <Compile Include="Models\User.cs">
       <DependentUpon>GBBDDatabase.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\VYStatus.cs">
+      <DependentUpon>GBBDDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Ydovstvorenie.cs">
+      <DependentUpon>GBBDDatabase.tt</DependentUpon>
+    </Compile>
     <Compile Include="Pages\OknoCar.xaml.cs">
       <DependentUpon>OknoCar.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\OknoCard.xaml.cs">
       <DependentUpon>OknoCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OknoHistory.xaml.cs">
+      <DependentUpon>OknoHistory.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\OknoMain.xaml.cs">
       <DependentUpon>OknoMain.xaml</DependentUpon>
@@ -160,11 +192,17 @@
     <Compile Include="Pages\OknoNewShtraf.xaml.cs">
       <DependentUpon>OknoNewShtraf.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\OknoNewVY.xaml.cs">
+      <DependentUpon>OknoNewVY.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\OknoOpen.xaml.cs">
       <DependentUpon>OknoOpen.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\OknoShtraf.xaml.cs">
       <DependentUpon>OknoShtraf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OknoVY.xaml.cs">
+      <DependentUpon>OknoVY.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -201,6 +239,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Resource Include="Imports\driver_license_template.jpg" />
     <Content Include="Models\GBBDDatabase.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>GBBDDatabase.Context.cs</LastGenOutput>

@@ -18,6 +18,7 @@ namespace GBBD.Models
         public User()
         {
             this.Car = new HashSet<Car>();
+            this.Ydovstvorenie = new HashSet<Ydovstvorenie>();
         }
     
         public int Id { get; set; }
@@ -40,5 +41,7 @@ namespace GBBD.Models
         public virtual ICollection<Car> Car { get; set; }
         public virtual Company Company { get; set; }
         public virtual Job Job { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Ydovstvorenie> Ydovstvorenie { get; set; }
     }
 }

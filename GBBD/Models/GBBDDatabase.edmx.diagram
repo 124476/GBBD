@@ -5,19 +5,26 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="5673c2afdc354cb0a6d64708fd4b0d22" Name="Diagram1" ZoomLevel="76">
-        <EntityTypeShape EntityType="GBBD_DatabaseModel.Car" Width="1.5" PointX="5.25" PointY="3.5" />
-        <EntityTypeShape EntityType="GBBD_DatabaseModel.Company" Width="1.5" PointX="0.75" PointY="3.75" />
-        <EntityTypeShape EntityType="GBBD_DatabaseModel.Inspector" Width="1.5" PointX="5.75" PointY="7" />
-        <EntityTypeShape EntityType="GBBD_DatabaseModel.Job" Width="1.5" PointX="0.75" PointY="0.75" />
-        <EntityTypeShape EntityType="GBBD_DatabaseModel.Shtraf" Width="1.5" PointX="7.5" PointY="3.125" />
-        <EntityTypeShape EntityType="GBBD_DatabaseModel.Status" Width="1.5" PointX="5.25" PointY="0.75" />
-        <EntityTypeShape EntityType="GBBD_DatabaseModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="8" />
-        <EntityTypeShape EntityType="GBBD_DatabaseModel.User" Width="1.5" PointX="3" PointY="2.25" />
+        <EntityTypeShape EntityType="GBBD_DatabaseModel.Car" Width="1.5" PointX="5.25" PointY="8.5" />
+        <EntityTypeShape EntityType="GBBD_DatabaseModel.Company" Width="1.5" PointX="0.75" PointY="4.875" />
+        <EntityTypeShape EntityType="GBBD_DatabaseModel.HistoryStatus" Width="1.5" PointX="7.5" PointY="4.375" />
+        <EntityTypeShape EntityType="GBBD_DatabaseModel.Inspector" Width="1.5" PointX="7.75" PointY="1.875" />
+        <EntityTypeShape EntityType="GBBD_DatabaseModel.Job" Width="1.5" PointX="0.75" PointY="1.875" />
+        <EntityTypeShape EntityType="GBBD_DatabaseModel.Shtraf" Width="1.5" PointX="7.5" PointY="8.125" />
+        <EntityTypeShape EntityType="GBBD_DatabaseModel.Status" Width="1.5" PointX="5.25" PointY="11.75" />
+        <EntityTypeShape EntityType="GBBD_DatabaseModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="8.875" />
+        <EntityTypeShape EntityType="GBBD_DatabaseModel.User" Width="1.5" PointX="3" PointY="3.25" />
+        <EntityTypeShape EntityType="GBBD_DatabaseModel.VYStatus" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="GBBD_DatabaseModel.Ydovstvorenie" Width="1.5" PointX="5.25" PointY="4.125" />
         <AssociationConnector Association="GBBD_DatabaseModel.FK_Car_User" />
         <AssociationConnector Association="GBBD_DatabaseModel.FK_Shtraf_Car" />
         <AssociationConnector Association="GBBD_DatabaseModel.FK_User_Company" />
+        <AssociationConnector Association="GBBD_DatabaseModel.FK_HistoryStatus_VYStatus" />
+        <AssociationConnector Association="GBBD_DatabaseModel.FK_HistoryStatus_Ydovstvorenie" />
         <AssociationConnector Association="GBBD_DatabaseModel.FK_User_Job" />
         <AssociationConnector Association="GBBD_DatabaseModel.FK_Shtraf_Status" />
+        <AssociationConnector Association="GBBD_DatabaseModel.FK_Ydovstvorenie_User" />
+        <AssociationConnector Association="GBBD_DatabaseModel.FK_Ydovstvorenie_VYStatus" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

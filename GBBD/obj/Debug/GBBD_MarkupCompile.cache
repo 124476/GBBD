@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\art82\source\repos\GBBD\GBBD\App.xaml
-8-476583483
+12106049566
 2-1582867851
-23-1125761848
+31-1856358316
 18711452971
-MainWindow.xaml;Pages\OknoCar.xaml;Pages\OknoCard.xaml;Pages\OknoMain.xaml;Pages\OknoNewCar.xaml;Pages\OknoNewShtraf.xaml;Pages\OknoOpen.xaml;Pages\OknoShtraf.xaml;
+MainWindow.xaml;Pages\OknoCar.xaml;Pages\OknoCard.xaml;Pages\OknoHistory.xaml;Pages\OknoMain.xaml;Pages\OknoNewCar.xaml;Pages\OknoNewShtraf.xaml;Pages\OknoNewVY.xaml;Pages\OknoOpen.xaml;Pages\OknoShtraf.xaml;Pages\OknoVY.xaml;Windows\OknoVYCopy.xaml;
 
 False
 

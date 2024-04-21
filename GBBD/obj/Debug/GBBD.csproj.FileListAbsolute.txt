@@ -34,3 +34,11 @@ C:\Users\art82\source\repos\GBBD\GBBD\obj\Debug\Pages\OknoNewCar.baml
 C:\Users\art82\source\repos\GBBD\GBBD\obj\Debug\Pages\OknoShtraf.baml
 C:\Users\art82\source\repos\GBBD\GBBD\obj\Debug\Pages\OknoNewShtraf.g.cs
 C:\Users\art82\source\repos\GBBD\GBBD\obj\Debug\Pages\OknoNewShtraf.baml
+C:\Users\art82\source\repos\GBBD\GBBD\obj\Debug\Pages\OknoVY.g.cs
+C:\Users\art82\source\repos\GBBD\GBBD\obj\Debug\Pages\OknoNewVY.g.cs
+C:\Users\art82\source\repos\GBBD\GBBD\obj\Debug\Pages\OknoVY.baml
+C:\Users\art82\source\repos\GBBD\GBBD\obj\Debug\Pages\OknoNewVY.baml
+C:\Users\art82\source\repos\GBBD\GBBD\obj\Debug\Pages\OknoHistory.g.cs
+C:\Users\art82\source\repos\GBBD\GBBD\obj\Debug\Pages\OknoHistory.baml
+C:\Users\art82\source\repos\GBBD\GBBD\obj\Debug\Windows\OknoVYCopy.g.cs
+C:\Users\art82\source\repos\GBBD\GBBD\obj\Debug\Windows\OknoVYCopy.baml

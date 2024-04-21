@@ -59,5 +59,14 @@ namespace GBBD.Pages
                 NavigationService.Navigate(new OknoCar(user));
             }
         }
+
+        private void GotVY_Click(object sender, RoutedEventArgs e)
+        {
+            User user = (sender as Button).DataContext as User;
+            if (user != null)
+            {
+                NavigationService.Navigate(new OknoVY(user));
+            }
+        }
     }
 }

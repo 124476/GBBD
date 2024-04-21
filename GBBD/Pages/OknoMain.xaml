@@ -33,6 +33,13 @@
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button x:Name="GotVY" FontSize="17" Click="GotVY_Click"  Content="Удостоверения" Width="150"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="New" Content="Новый водитель" FontSize="17" Click="New_Click" Grid.Row="1" Width="400" Margin="0,10,0,10"></Button>
