@@ -32,11 +32,13 @@ namespace GBBD.Pages
 
         private void New_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             NavigationService.Navigate(new OknoNewVY(contextUser, null));
         }
 
         private void GotVY_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             Ydovstvorenie ydovstvorenie = (sender as Button).DataContext as Ydovstvorenie;
             if (ydovstvorenie != null)
             {
@@ -51,11 +53,13 @@ namespace GBBD.Pages
 
         private void Refresh()
         {
+            App.dateNow = DateTime.Now;
             DataVY.ItemsSource = App.DB.Ydovstvorenie.Where(x => x.UserId == contextUser.Id).ToList();
         }
 
         private void CopyVy_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             Ydovstvorenie ydovstvorenie = (sender as Button).DataContext as Ydovstvorenie;
             if (ydovstvorenie != null)
             {

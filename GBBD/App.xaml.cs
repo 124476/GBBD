@@ -15,5 +15,6 @@ namespace GBBD
     public partial class App : Application
     {
         public static GBBD_DatabaseEntities DB = new GBBD_DatabaseEntities();
+        public static DateTime dateNow;
     }
 }

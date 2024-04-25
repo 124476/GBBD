@@ -1,4 +1,5 @@
 ﻿using GBBD.Models;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -29,11 +30,18 @@ namespace GBBD.Windows
 
         private void CopyBtn_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new PrintDialog();
+            App.dateNow = DateTime.Now;
+            var dialog = new SaveFileDialog() { Filter = "*.jpeg; | *.jpeg;" };
             if (dialog.ShowDialog().GetValueOrDefault())
             {
-                CopyBtn.Visibility = Visibility.Hidden;
-                dialog.PrintVisual(GridCopy, "");
+                var renderBitmap = new RenderTargetBitmap((int)GridCopy.ActualWidth, (int)GridCopy.ActualHeight, 96, 96, PixelFormats.Pbgra32);
+                renderBitmap.Render(GridCopy);
+                var jpegEncoder = new JpegBitmapEncoder();
+                jpegEncoder.Frames.Add(BitmapFrame.Create(renderBitmap));
+                using(var fileStream = new FileStream(dialog.FileName, FileMode.Create))
+                {
+                    jpegEncoder.Save(fileStream);
+                }
             }
         }
     }

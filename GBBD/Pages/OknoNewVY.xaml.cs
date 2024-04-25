@@ -49,6 +49,7 @@ namespace GBBD.Pages
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             if (ydovstvorenie.LicenceNumber != null && ydovstvorenie.LicenceSeries != null 
                 && ExpireDate.SelectedDate != null && LicenceDate.SelectedDate != null
                 && ydovstvorenie.Categories != null)
@@ -90,6 +91,7 @@ namespace GBBD.Pages
 
         private void HistoryBtn_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             NavigationService.Navigate(new OknoHistory(ydovstvorenie));
         }
     }

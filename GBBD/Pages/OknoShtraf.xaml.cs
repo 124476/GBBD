@@ -31,6 +31,7 @@ namespace GBBD.Pages
 
         private void Refresh()
         {
+            App.dateNow = DateTime.Now;
             DataShrafts.ItemsSource = App.DB.Shtraf.Where(x => x.Car.Id == contextCar.Id).ToList();
         }
 
@@ -47,6 +48,7 @@ namespace GBBD.Pages
 
         private void New_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             NavigationService.Navigate(new OknoNewShtraf(contextCar));
         }
 

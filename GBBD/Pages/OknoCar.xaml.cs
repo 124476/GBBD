@@ -33,11 +33,13 @@ namespace GBBD.Pages
 
         private void Refresh()
         {
+            App.dateNow = DateTime.Now;
             DataCars.ItemsSource = App.DB.Car.Where(x => x.User.Id == contextUser.Id).ToList();
         }
 
         private void GotShtraf_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             Car car = (sender as Button).DataContext as Car;
             if (car != null)
             {
@@ -47,6 +49,7 @@ namespace GBBD.Pages
 
         private void New_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             NavigationService.Navigate(new OknoNewCar(contextUser));
         }
 
@@ -57,6 +60,7 @@ namespace GBBD.Pages
 
         private void CarDel_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             Car car = (sender as Button).DataContext as Car;
             if (car != null)
             {
@@ -72,6 +76,7 @@ namespace GBBD.Pages
 
         private void SetShtraf_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             var dialog = new SaveFileDialog() { Filter="*.csv; | *.csv;"};
             if (dialog.ShowDialog().GetValueOrDefault())
             {

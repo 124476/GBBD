@@ -35,6 +35,7 @@ namespace GBBD.Pages
 
         private void GotPhoto_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             var dialog = new OpenFileDialog() { Filter = "*.png;*.jpg; | *.png;*.jpg;" };
             if (dialog.ShowDialog().GetValueOrDefault())
             {
@@ -46,6 +47,7 @@ namespace GBBD.Pages
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             if (contetxUser.Surname != null && contetxUser.Name != null && contetxUser.MiddleName != null
                 && contetxUser.Email != null && contetxUser.Seria != null && contetxUser.AddLife != null
                 && contetxUser.Address != null && ComboCompanyes.SelectedIndex != -1 && ComboJobs.SelectedIndex != -1

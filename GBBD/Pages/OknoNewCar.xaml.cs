@@ -32,6 +32,7 @@ namespace GBBD.Pages
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             if (car.Number != null)
             {
                 App.DB.Car.Add(car);

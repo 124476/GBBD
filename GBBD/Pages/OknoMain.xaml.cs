@@ -29,11 +29,13 @@ namespace GBBD.Pages
 
         private void Refresh()
         {
+            App.dateNow = DateTime.Now;
             DataUsers.ItemsSource = App.DB.User.ToList();
         }
 
         private void GotCard_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             User user = (sender as Button).DataContext as User;
             if (user != null)
             {
@@ -43,6 +45,7 @@ namespace GBBD.Pages
 
         private void New_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             NavigationService.Navigate(new OknoCard(new User()));
         }
 
@@ -53,6 +56,7 @@ namespace GBBD.Pages
 
         private void GotCar_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             User user = (sender as Button).DataContext as User;
             if (user != null)
             {
@@ -62,11 +66,18 @@ namespace GBBD.Pages
 
         private void GotVY_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             User user = (sender as Button).DataContext as User;
             if (user != null)
             {
                 NavigationService.Navigate(new OknoVY(user));
             }
+        }
+
+        private void YDBtn_Click(object sender, RoutedEventArgs e)
+        {
+            App.dateNow = DateTime.Now;
+            NavigationService.Navigate(new OknoAllYD());
         }
     }
 }

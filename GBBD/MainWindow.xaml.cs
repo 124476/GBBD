@@ -15,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace GBBD
 {
@@ -27,6 +28,26 @@ namespace GBBD
         {
             InitializeComponent();
             MyFrame.Navigate(new OknoOpen());
+            App.dateNow = DateTime.Now;
+            DispatcherTimer dispatcherTimer = new DispatcherTimer();
+            dispatcherTimer.Tick += DispatcherTimer_Tick;
+            dispatcherTimer.Interval = TimeSpan.FromSeconds(1);
+            dispatcherTimer.Start();
+        }
+
+        private void DispatcherTimer_Tick(object sender, EventArgs e)
+        {
+            if (!(DateTime.Now.AddMinutes(-1) <= App.dateNow && App.dateNow <= DateTime.Now))
+            {
+                while (true)
+                {
+                    if (MyFrame.CanGoBack)
+                    {
+                        MyFrame.GoBack();
+                    }
+                    else break;
+                }
+            }
         }
 
         private void MyFrame_ContentRendered(object sender, EventArgs e)
@@ -43,6 +64,7 @@ namespace GBBD
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             MyFrame.GoBack();
         }
     }

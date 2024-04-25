@@ -1,121 +1,137 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\art82\\source\\repos\\GBBD\\",
+  "WorkspaceRootPath": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|c:\\users\\art82\\source\\repos\\gbbd\\gbbd\\windows\\oknovycopy.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\windows\\oknovycopy.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\windows\\oknovycopy.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\windows\\oknovycopy.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|c:\\users\\stipo6\\source\\repos\\gbbd\\gbbd\\pages\\oknoallyd.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknoallyd.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknohistory.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknohistory.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknonewshtraf.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknonewshtraf.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknocar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknocar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknocar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknovy.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknovy.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknocard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknocard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\models\\partials\\vystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\models\\partials\\vystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknohistory.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknohistory.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknovy.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknovy.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknonewvy.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknonewvy.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknonewvy.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknonewvy.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknohistory.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknohistory.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknoshtraf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknoshtraf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknonewcar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknonewcar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknomain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknomain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknomain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknonewcar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknonewcar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknonewcar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknoshtraf.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknonewshtraf.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknonewshtraf.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknonewvy.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknonewvy.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknoopen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknoopen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknoshtraf.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknoshtraf.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\models\\gbbddatabase.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\models\\gbbddatabase.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknovy.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknovy.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\windows\\oknovycopy.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\windows\\oknovycopy.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|c:\\users\\stipo6\\source\\repos\\gbbd\\gbbd\\pages\\oknoallyd.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknoallyd.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknomain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknomain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknovy.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknovy.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|c:\\users\\stipo6\\source\\repos\\gbbd\\gbbd\\windows\\oknovycopy.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\windows\\oknovycopy.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|c:\\users\\stipo6\\source\\repos\\gbbd\\gbbd\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|GBBD||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknomain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknomain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\models\\partials\\vystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\models\\partials\\vystatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknocar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknonewvy.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknonewvy.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknohistory.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknohistory.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknoshtraf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknoshtraf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknonewcar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknonewcar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\models\\gbbddatabase.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\models\\gbbddatabase.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknocar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknocar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknonewshtraf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknonewshtraf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknonewshtraf.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknoopen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknoopen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknoopen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknoopen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknoopen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknocard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknocard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\pages\\oknocard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\Stipo6\\source\\repos\\GBBD\\gbbd\\pages\\oknocard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\pages\\oknocard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|C:\\Users\\art82\\source\\repos\\GBBD\\gbbd\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|c:\\users\\stipo6\\source\\repos\\gbbd\\gbbd\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{D265CC65-D7BA-4FD4-A69A-AE8F88592EA7}|GBBD\\GBBD.csproj|solutionrelative:gbbd\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -125,7 +141,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 446,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -144,250 +160,198 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OknoVYCopy.xaml",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Windows\\OknoVYCopy.xaml",
-              "RelativeDocumentMoniker": "GBBD\\Windows\\OknoVYCopy.xaml",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Windows\\OknoVYCopy.xaml",
-              "RelativeToolTip": "GBBD\\Windows\\OknoVYCopy.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-21T15:16:09.209Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OknoVYCopy.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Windows\\OknoVYCopy.xaml.cs",
-              "RelativeDocumentMoniker": "GBBD\\Windows\\OknoVYCopy.xaml.cs",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Windows\\OknoVYCopy.xaml.cs",
-              "RelativeToolTip": "GBBD\\Windows\\OknoVYCopy.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAcwBkAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T15:18:37.263Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OknoHistory.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoHistory.xaml.cs",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoHistory.xaml.cs",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoHistory.xaml.cs",
-              "RelativeToolTip": "GBBD\\Pages\\OknoHistory.xaml.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAABsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T15:07:23.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "OknoHistory.xaml",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoHistory.xaml",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoHistory.xaml",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoHistory.xaml",
-              "RelativeToolTip": "GBBD\\Pages\\OknoHistory.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-21T15:04:50.391Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Pages\\OknoNewVY.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewVY.xaml.cs",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoNewVY.xaml.cs",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewVY.xaml.cs",
-              "RelativeToolTip": "GBBD\\Pages\\OknoNewVY.xaml.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAjwFwAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T14:21:38.059Z"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "OknoNewVY.xaml",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewVY.xaml",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoNewVY.xaml",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewVY.xaml",
-              "RelativeToolTip": "GBBD\\Pages\\OknoNewVY.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-21T14:07:38.12Z"
+              "Title": "OknoNewVY.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewVY.xaml.cs",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoNewVY.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewVY.xaml.cs",
+              "RelativeToolTip": "GBBD\\Pages\\OknoNewVY.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAtwC4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T14:21:38.059Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "OknoVY.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoVY.xaml.cs",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoVY.xaml.cs",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoVY.xaml.cs",
-              "RelativeToolTip": "GBBD\\Pages\\OknoVY.xaml.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAowD4AAAAkAAAA",
+              "Title": "OknoNewShtraf.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewShtraf.xaml.cs",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoNewShtraf.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewShtraf.xaml.cs",
+              "RelativeToolTip": "GBBD\\Pages\\OknoNewShtraf.xaml.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAACQAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T13:57:40.127Z"
+              "WhenOpened": "2024-04-20T18:47:40.739Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "VYStatus.cs",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Models\\Partials\\VYStatus.cs",
-              "RelativeDocumentMoniker": "GBBD\\Models\\Partials\\VYStatus.cs",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Models\\Partials\\VYStatus.cs",
-              "RelativeToolTip": "GBBD\\Models\\Partials\\VYStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAeAAAA",
+              "Title": "OknoNewCar.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewCar.xaml.cs",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoNewCar.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewCar.xaml.cs",
+              "RelativeToolTip": "GBBD\\Pages\\OknoNewCar.xaml.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAcwCIAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T14:00:30.741Z"
+              "WhenOpened": "2024-04-20T18:33:54.852Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "OknoVY.xaml",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoVY.xaml",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoVY.xaml",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoVY.xaml",
-              "RelativeToolTip": "GBBD\\Pages\\OknoVY.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-21T13:57:25.471Z"
+              "Title": "OknoMain.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoMain.xaml.cs",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoMain.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoMain.xaml.cs",
+              "RelativeToolTip": "GBBD\\Pages\\OknoMain.xaml.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAiwB8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T12:33:38.952Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "OknoCar.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoCar.xaml.cs",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoCar.xaml.cs",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoCar.xaml.cs",
-              "RelativeToolTip": "GBBD\\Pages\\OknoCar.xaml.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAWwFsAAAAAAAAA",
+              "Title": "OknoHistory.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoHistory.xaml.cs",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoHistory.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoHistory.xaml.cs",
+              "RelativeToolTip": "GBBD\\Pages\\OknoHistory.xaml.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T18:26:03.886Z"
+              "WhenOpened": "2024-04-21T15:07:23.591Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "OknoNewShtraf.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewShtraf.xaml.cs",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoNewShtraf.xaml.cs",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewShtraf.xaml.cs",
-              "RelativeToolTip": "GBBD\\Pages\\OknoNewShtraf.xaml.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAgwDIAAAAyAAAA",
+              "Title": "OknoCard.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoCard.xaml.cs",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoCard.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoCard.xaml.cs",
+              "RelativeToolTip": "GBBD\\Pages\\OknoCard.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAMwCUAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T18:47:40.739Z"
+              "WhenOpened": "2024-04-20T12:37:49.971Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "OknoNewShtraf.xaml",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewShtraf.xaml",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoNewShtraf.xaml",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewShtraf.xaml",
-              "RelativeToolTip": "GBBD\\Pages\\OknoNewShtraf.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-20T18:47:38.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "OknoNewCar.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewCar.xaml.cs",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoNewCar.xaml.cs",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewCar.xaml.cs",
-              "RelativeToolTip": "GBBD\\Pages\\OknoNewCar.xaml.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAmwCkAAAANAAAA",
+              "DocumentIndex": 2,
+              "Title": "OknoCar.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoCar.xaml.cs",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoCar.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoCar.xaml.cs",
+              "RelativeToolTip": "GBBD\\Pages\\OknoCar.xaml.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAIA8wCMAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T18:33:54.852Z"
+              "WhenOpened": "2024-04-20T18:26:03.886Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "OknoNewCar.xaml",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewCar.xaml",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoNewCar.xaml",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewCar.xaml",
-              "RelativeToolTip": "GBBD\\Pages\\OknoNewCar.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-20T18:33:46.411Z"
+              "DocumentIndex": 1,
+              "Title": "OknoAllYD.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoAllYD.xaml.cs",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoAllYD.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoAllYD.xaml.cs",
+              "RelativeToolTip": "GBBD\\Pages\\OknoAllYD.xaml.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAtwCUAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T16:00:24.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "GBBD\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\MainWindow.xaml.cs",
+              "RelativeToolTip": "GBBD\\MainWindow.xaml.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAEwCoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T11:56:39.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OknoOpen.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoOpen.xaml.cs",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoOpen.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoOpen.xaml.cs",
+              "RelativeToolTip": "GBBD\\Pages\\OknoOpen.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAewCwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T12:02:47.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OknoShtraf.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoShtraf.xaml.cs",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoShtraf.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoShtraf.xaml.cs",
+              "RelativeToolTip": "GBBD\\Pages\\OknoShtraf.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-20T18:38:02.358Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "OknoShtraf.xaml",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoShtraf.xaml",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoShtraf.xaml",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoShtraf.xaml",
-              "RelativeToolTip": "GBBD\\Pages\\OknoShtraf.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-20T18:29:24.516Z"
+              "Title": "OknoVY.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoVY.xaml.cs",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoVY.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoVY.xaml.cs",
+              "RelativeToolTip": "GBBD\\Pages\\OknoVY.xaml.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAqwCIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T13:57:40.127Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "OknoCar.xaml",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoCar.xaml",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoCar.xaml",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoCar.xaml",
-              "RelativeToolTip": "GBBD\\Pages\\OknoCar.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-20T18:22:47.885Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "OknoCard.xaml",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoCard.xaml",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoCard.xaml",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoCard.xaml",
-              "RelativeToolTip": "GBBD\\Pages\\OknoCard.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-20T12:33:57.911Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "OknoMain.xaml",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoMain.xaml",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoMain.xaml",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoMain.xaml",
-              "RelativeToolTip": "GBBD\\Pages\\OknoMain.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-20T12:12:19.068Z"
+              "DocumentIndex": 12,
+              "Title": "OknoVYCopy.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Windows\\OknoVYCopy.xaml.cs",
+              "RelativeDocumentMoniker": "GBBD\\Windows\\OknoVYCopy.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Windows\\OknoVYCopy.xaml.cs",
+              "RelativeToolTip": "GBBD\\Windows\\OknoVYCopy.xaml.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAswCAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T15:18:37.263Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "GBBD\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\MainWindow.xaml",
-              "RelativeToolTip": "GBBD\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-20T11:56:42.093Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "GBBD\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\MainWindow.xaml.cs",
-              "RelativeToolTip": "GBBD\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAewCEAAAAiAAAA",
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\App.xaml.cs",
+              "RelativeDocumentMoniker": "GBBD\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\App.xaml.cs",
+              "RelativeToolTip": "GBBD\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T11:56:39.195Z"
+              "WhenOpened": "2024-04-20T12:05:22.69Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 14,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\App.xaml",
               "RelativeDocumentMoniker": "GBBD\\App.xaml",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\App.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\App.xaml",
               "RelativeToolTip": "GBBD\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-04-20T12:05:22.123Z",
@@ -395,96 +359,208 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "OknoHistory.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoHistory.xaml",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoHistory.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoHistory.xaml",
+              "RelativeToolTip": "GBBD\\Pages\\OknoHistory.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-21T15:04:50.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OknoAllYD.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoAllYD.xaml",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoAllYD.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoAllYD.xaml",
+              "RelativeToolTip": "GBBD\\Pages\\OknoAllYD.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-25T15:59:32.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "OknoShtraf.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoShtraf.xaml.cs",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoShtraf.xaml.cs",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoShtraf.xaml.cs",
-              "RelativeToolTip": "GBBD\\Pages\\OknoShtraf.xaml.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAQwCEAAABiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T18:38:02.358Z"
+              "Title": "OknoMain.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoMain.xaml",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoMain.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoMain.xaml",
+              "RelativeToolTip": "GBBD\\Pages\\OknoMain.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-20T12:12:19.068Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "GBBDDatabase.edmx [Diagram1]",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Models\\GBBDDatabase.edmx",
-              "RelativeDocumentMoniker": "GBBD\\Models\\GBBDDatabase.edmx",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Models\\GBBDDatabase.edmx [Diagram1]*",
-              "RelativeToolTip": "GBBD\\Models\\GBBDDatabase.edmx [Diagram1]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-04-20T12:04:38.853Z"
+              "Title": "OknoVY.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoVY.xaml",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoVY.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoVY.xaml",
+              "RelativeToolTip": "GBBD\\Pages\\OknoVY.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-21T13:57:25.471Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "OknoCard.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoCard.xaml.cs",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoCard.xaml.cs",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoCard.xaml.cs",
-              "RelativeToolTip": "GBBD\\Pages\\OknoCard.xaml.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAvwD0AAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T12:37:49.971Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "GBBD",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\GBBD.csproj",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\GBBD.csproj",
               "RelativeDocumentMoniker": "GBBD\\GBBD.csproj",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\GBBD.csproj*",
-              "RelativeToolTip": "GBBD\\GBBD.csproj*",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\GBBD.csproj",
+              "RelativeToolTip": "GBBD\\GBBD.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-04-20T12:16:11.651Z"
+              "WhenOpened": "2024-04-20T12:16:11.651Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "OknoMain.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoMain.xaml.cs",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoMain.xaml.cs",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoMain.xaml.cs",
-              "RelativeToolTip": "GBBD\\Pages\\OknoMain.xaml.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAwwEEAAAAdAAAA",
+              "DocumentIndex": 21,
+              "Title": "VYStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Models\\Partials\\VYStatus.cs",
+              "RelativeDocumentMoniker": "GBBD\\Models\\Partials\\VYStatus.cs",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Models\\Partials\\VYStatus.cs",
+              "RelativeToolTip": "GBBD\\Models\\Partials\\VYStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T12:33:38.952Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "OknoOpen.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoOpen.xaml.cs",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoOpen.xaml.cs",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoOpen.xaml.cs",
-              "RelativeToolTip": "GBBD\\Pages\\OknoOpen.xaml.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAnwDIAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T12:02:47.897Z"
+              "WhenOpened": "2024-04-21T14:00:30.741Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "OknoOpen.xaml",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoOpen.xaml",
-              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoOpen.xaml",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\Pages\\OknoOpen.xaml",
-              "RelativeToolTip": "GBBD\\Pages\\OknoOpen.xaml",
+              "Title": "OknoNewVY.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewVY.xaml",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoNewVY.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewVY.xaml",
+              "RelativeToolTip": "GBBD\\Pages\\OknoNewVY.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-20T11:58:31.879Z"
+              "WhenOpened": "2024-04-21T14:07:38.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OknoVYCopy.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Windows\\OknoVYCopy.xaml",
+              "RelativeDocumentMoniker": "GBBD\\Windows\\OknoVYCopy.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Windows\\OknoVYCopy.xaml",
+              "RelativeToolTip": "GBBD\\Windows\\OknoVYCopy.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-21T15:16:09.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\App.config",
+              "RelativeDocumentMoniker": "GBBD\\App.config",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\App.config",
+              "RelativeToolTip": "GBBD\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAD+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-25T15:48:37.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "OknoNewShtraf.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewShtraf.xaml",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoNewShtraf.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewShtraf.xaml",
+              "RelativeToolTip": "GBBD\\Pages\\OknoNewShtraf.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-20T18:47:38.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "OknoNewCar.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewCar.xaml",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoNewCar.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoNewCar.xaml",
+              "RelativeToolTip": "GBBD\\Pages\\OknoNewCar.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-20T18:33:46.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "OknoShtraf.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoShtraf.xaml",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoShtraf.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoShtraf.xaml",
+              "RelativeToolTip": "GBBD\\Pages\\OknoShtraf.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-20T18:29:24.516Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\App.xaml.cs",
-              "RelativeDocumentMoniker": "GBBD\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\art82\\source\\repos\\GBBD\\GBBD\\App.xaml.cs",
-              "RelativeToolTip": "GBBD\\App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T12:05:22.69Z"
+              "Title": "OknoCar.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoCar.xaml",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoCar.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoCar.xaml",
+              "RelativeToolTip": "GBBD\\Pages\\OknoCar.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-20T18:22:47.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "OknoCard.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoCard.xaml",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoCard.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoCard.xaml",
+              "RelativeToolTip": "GBBD\\Pages\\OknoCard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-20T12:33:57.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "GBBD\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\MainWindow.xaml",
+              "RelativeToolTip": "GBBD\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-20T11:56:42.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "GBBDDatabase.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Models\\GBBDDatabase.edmx",
+              "RelativeDocumentMoniker": "GBBD\\Models\\GBBDDatabase.edmx",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Models\\GBBDDatabase.edmx [Diagram1]",
+              "RelativeToolTip": "GBBD\\Models\\GBBDDatabase.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-04-20T12:04:38.853Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "OknoOpen.xaml",
+              "DocumentMoniker": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoOpen.xaml",
+              "RelativeDocumentMoniker": "GBBD\\Pages\\OknoOpen.xaml",
+              "ToolTip": "C:\\Users\\Stipo6\\source\\repos\\GBBD\\GBBD\\Pages\\OknoOpen.xaml",
+              "RelativeToolTip": "GBBD\\Pages\\OknoOpen.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-20T11:58:31.879Z",
+              "EditorCaption": ""
             }
           ]
         },

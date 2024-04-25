@@ -34,6 +34,7 @@ namespace GBBD.Pages
 
         private void GotPhoto_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             var dialog = new OpenFileDialog();
             if (dialog.ShowDialog().GetValueOrDefault())
             {
@@ -45,6 +46,7 @@ namespace GBBD.Pages
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             if (shtraf.LicenceNum != null && shtraf.Photo != null && shtraf.Region != null)
             {
                 shtraf.StatusId = 1;
