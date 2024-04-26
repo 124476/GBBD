@@ -18,6 +18,7 @@ namespace GBBD.Models
         public User()
         {
             this.Car = new HashSet<Car>();
+            this.CarHistory = new HashSet<CarHistory>();
             this.Ydovstvorenie = new HashSet<Ydovstvorenie>();
         }
     
@@ -36,9 +37,12 @@ namespace GBBD.Models
         public string Email { get; set; }
         public byte[] Photo { get; set; }
         public string Description { get; set; }
+        public Nullable<System.DateTime> DateBorn { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Car> Car { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CarHistory> CarHistory { get; set; }
         public virtual Company Company { get; set; }
         public virtual Job Job { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

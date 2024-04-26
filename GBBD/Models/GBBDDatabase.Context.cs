@@ -26,13 +26,19 @@ namespace GBBD.Models
         }
     
         public virtual DbSet<Car> Car { get; set; }
+        public virtual DbSet<CarHistory> CarHistory { get; set; }
+        public virtual DbSet<Color> Color { get; set; }
         public virtual DbSet<Company> Company { get; set; }
+        public virtual DbSet<EngineType> EngineType { get; set; }
         public virtual DbSet<HistoryStatus> HistoryStatus { get; set; }
         public virtual DbSet<Inspector> Inspector { get; set; }
         public virtual DbSet<Job> Job { get; set; }
+        public virtual DbSet<Manufact> Manufact { get; set; }
+        public virtual DbSet<ModelCar> ModelCar { get; set; }
         public virtual DbSet<Shtraf> Shtraf { get; set; }
         public virtual DbSet<Status> Status { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<TypeOfDrive> TypeOfDrive { get; set; }
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<VYStatus> VYStatus { get; set; }
         public virtual DbSet<Ydovstvorenie> Ydovstvorenie { get; set; }

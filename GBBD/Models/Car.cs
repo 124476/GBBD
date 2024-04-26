@@ -17,14 +17,35 @@ namespace GBBD.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Car()
         {
+            this.CarHistory = new HashSet<CarHistory>();
             this.Shtraf = new HashSet<Shtraf>();
         }
     
         public int Id { get; set; }
         public Nullable<int> UserId { get; set; }
+        public string VIN { get; set; }
+        public Nullable<int> ManufactId { get; set; }
+        public Nullable<int> ModelId { get; set; }
+        public Nullable<int> Year { get; set; }
+        public Nullable<int> Weight { get; set; }
+        public Nullable<int> ColorId { get; set; }
+        public Nullable<int> EngineTypeId { get; set; }
+        public Nullable<int> TypeOfDriveId { get; set; }
+        public Nullable<int> Moch { get; set; }
+        public string MochHorse { get; set; }
+        public string MaxSila { get; set; }
+        public string Comment { get; set; }
         public string Number { get; set; }
+        public byte[] Photo { get; set; }
     
+        public virtual Color Color { get; set; }
+        public virtual EngineType EngineType { get; set; }
+        public virtual Manufact Manufact { get; set; }
+        public virtual ModelCar ModelCar { get; set; }
+        public virtual TypeOfDrive TypeOfDrive { get; set; }
         public virtual User User { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CarHistory> CarHistory { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Shtraf> Shtraf { get; set; }
     }

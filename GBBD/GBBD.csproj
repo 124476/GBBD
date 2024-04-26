@@ -64,6 +64,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\CarHistory.cs">
+      <DependentUpon>GBBDDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Color.cs">
+      <DependentUpon>GBBDDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EngineType.cs">
+      <DependentUpon>GBBDDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Manufact.cs">
+      <DependentUpon>GBBDDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ModelCar.cs">
+      <DependentUpon>GBBDDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Partials\User.cs" />
+    <Compile Include="Models\TypeOfDrive.cs">
+      <DependentUpon>GBBDDatabase.tt</DependentUpon>
+    </Compile>
     <Compile Include="Pages\OknoAllYD.xaml.cs">
       <DependentUpon>OknoAllYD.xaml</DependentUpon>
     </Compile>

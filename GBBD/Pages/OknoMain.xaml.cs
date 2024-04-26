@@ -54,16 +54,6 @@ namespace GBBD.Pages
             Refresh();
         }
 
-        private void GotCar_Click(object sender, RoutedEventArgs e)
-        {
-            App.dateNow = DateTime.Now;
-            User user = (sender as Button).DataContext as User;
-            if (user != null)
-            {
-                NavigationService.Navigate(new OknoCar(user));
-            }
-        }
-
         private void GotVY_Click(object sender, RoutedEventArgs e)
         {
             App.dateNow = DateTime.Now;
@@ -78,6 +68,11 @@ namespace GBBD.Pages
         {
             App.dateNow = DateTime.Now;
             NavigationService.Navigate(new OknoAllYD());
+        }
+
+        private void CarsBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new OknoCar());
         }
     }
 }

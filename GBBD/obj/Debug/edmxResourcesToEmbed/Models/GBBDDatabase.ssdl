@@ -6,7 +6,41 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="UserId" Type="int" />
-    <Property Name="Number" Type="nvarchar" MaxLength="6" />
+    <Property Name="VIN" Type="nvarchar" MaxLength="150" />
+    <Property Name="ManufactId" Type="int" />
+    <Property Name="ModelId" Type="int" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Weight" Type="int" />
+    <Property Name="ColorId" Type="int" />
+    <Property Name="EngineTypeId" Type="int" />
+    <Property Name="TypeOfDriveId" Type="int" />
+    <Property Name="Moch" Type="int" />
+    <Property Name="MochHorse" Type="nvarchar" MaxLength="150" />
+    <Property Name="MaxSila" Type="nvarchar" MaxLength="150" />
+    <Property Name="Comment" Type="nvarchar" MaxLength="500" />
+    <Property Name="Number" Type="nvarchar" MaxLength="150" />
+    <Property Name="Photo" Type="image" />
+  </EntityType>
+  <EntityType Name="CarHistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CarId" Type="int" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="Comment" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Color">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ColorNum" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" />
+    <Property Name="ColorName" Type="nvarchar" MaxLength="150" />
+    <Property Name="IsMettalic" Type="bit" />
+    <Property Name="NameEn" Type="nvarchar" MaxLength="150" />
+    <Property Name="ColorNameEn" Type="nvarchar" MaxLength="150" />
   </EntityType>
   <EntityType Name="Company">
     <Key>
@@ -14,6 +48,13 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="EngineType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" />
   </EntityType>
   <EntityType Name="HistoryStatus">
     <Key>
@@ -40,6 +81,20 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Manufact">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="ModelCar">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" />
   </EntityType>
   <EntityType Name="Shtraf">
     <Key>
@@ -70,6 +125,13 @@
     <Property Name="version" Type="int" />
     <Property Name="definition" Type="varbinary(max)" />
   </EntityType>
+  <EntityType Name="TypeOfDrive">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" />
+  </EntityType>
   <EntityType Name="User">
     <Key>
       <PropertyRef Name="Id" />
@@ -89,6 +151,7 @@
     <Property Name="Email" Type="nvarchar" MaxLength="150" />
     <Property Name="Photo" Type="image" />
     <Property Name="Description" Type="nvarchar" MaxLength="250" />
+    <Property Name="DateBorn" Type="date" />
   </EntityType>
   <EntityType Name="VYStatus">
     <Key>
@@ -110,6 +173,66 @@
     <Property Name="LicenceNumber" Type="nvarchar" MaxLength="6" />
     <Property Name="StatusId" Type="int" />
   </EntityType>
+  <Association Name="FK_Car_Color">
+    <End Role="Color" Type="Self.Color" Multiplicity="0..1" />
+    <End Role="Car" Type="Self.Car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Color">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Car">
+        <PropertyRef Name="ColorId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Car_EngineType">
+    <End Role="EngineType" Type="Self.EngineType" Multiplicity="0..1" />
+    <End Role="Car" Type="Self.Car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EngineType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Car">
+        <PropertyRef Name="EngineTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Car_Manufact">
+    <End Role="Manufact" Type="Self.Manufact" Multiplicity="0..1" />
+    <End Role="Car" Type="Self.Car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Manufact">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Car">
+        <PropertyRef Name="ManufactId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Car_ModelCar">
+    <End Role="ModelCar" Type="Self.ModelCar" Multiplicity="0..1" />
+    <End Role="Car" Type="Self.Car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ModelCar">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Car">
+        <PropertyRef Name="ModelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Car_TypeOfDrive">
+    <End Role="TypeOfDrive" Type="Self.TypeOfDrive" Multiplicity="0..1" />
+    <End Role="Car" Type="Self.Car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeOfDrive">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Car">
+        <PropertyRef Name="TypeOfDriveId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Car_User">
     <End Role="User" Type="Self.User" Multiplicity="0..1" />
     <End Role="Car" Type="Self.Car" Multiplicity="*" />
@@ -118,6 +241,30 @@
         <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="Car">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CarHistory_Car">
+    <End Role="Car" Type="Self.Car" Multiplicity="0..1" />
+    <End Role="CarHistory" Type="Self.CarHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Car">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CarHistory">
+        <PropertyRef Name="CarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CarHistory_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="CarHistory" Type="Self.CarHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CarHistory">
         <PropertyRef Name="UserId" />
       </Dependent>
     </ReferentialConstraint>
@@ -220,19 +367,53 @@
   </Association>
   <EntityContainer Name="Хранилище GBBD_DatabaseModelContainer">
     <EntitySet Name="Car" EntityType="Self.Car" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CarHistory" EntityType="Self.CarHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Color" EntityType="Self.Color" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EngineType" EntityType="Self.EngineType" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="HistoryStatus" EntityType="Self.HistoryStatus" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Inspector" EntityType="Self.Inspector" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Job" EntityType="Self.Job" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Manufact" EntityType="Self.Manufact" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ModelCar" EntityType="Self.ModelCar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Shtraf" EntityType="Self.Shtraf" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Status" EntityType="Self.Status" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TypeOfDrive" EntityType="Self.TypeOfDrive" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="VYStatus" EntityType="Self.VYStatus" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Ydovstvorenie" EntityType="Self.Ydovstvorenie" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Car_Color" Association="Self.FK_Car_Color">
+      <End Role="Color" EntitySet="Color" />
+      <End Role="Car" EntitySet="Car" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Car_EngineType" Association="Self.FK_Car_EngineType">
+      <End Role="EngineType" EntitySet="EngineType" />
+      <End Role="Car" EntitySet="Car" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Car_Manufact" Association="Self.FK_Car_Manufact">
+      <End Role="Manufact" EntitySet="Manufact" />
+      <End Role="Car" EntitySet="Car" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Car_ModelCar" Association="Self.FK_Car_ModelCar">
+      <End Role="ModelCar" EntitySet="ModelCar" />
+      <End Role="Car" EntitySet="Car" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Car_TypeOfDrive" Association="Self.FK_Car_TypeOfDrive">
+      <End Role="TypeOfDrive" EntitySet="TypeOfDrive" />
+      <End Role="Car" EntitySet="Car" />
+    </AssociationSet>
     <AssociationSet Name="FK_Car_User" Association="Self.FK_Car_User">
       <End Role="User" EntitySet="User" />
       <End Role="Car" EntitySet="Car" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CarHistory_Car" Association="Self.FK_CarHistory_Car">
+      <End Role="Car" EntitySet="Car" />
+      <End Role="CarHistory" EntitySet="CarHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CarHistory_User" Association="Self.FK_CarHistory_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="CarHistory" EntitySet="CarHistory" />
     </AssociationSet>
     <AssociationSet Name="FK_HistoryStatus_VYStatus" Association="Self.FK_HistoryStatus_VYStatus">
       <End Role="VYStatus" EntitySet="VYStatus" />

@@ -4,8 +4,44 @@
     <EntitySetMapping Name="Car">
       <EntityTypeMapping TypeName="GBBD_DatabaseModel.Car">
         <MappingFragment StoreEntitySet="Car">
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
           <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="MaxSila" ColumnName="MaxSila" />
+          <ScalarProperty Name="MochHorse" ColumnName="MochHorse" />
+          <ScalarProperty Name="Moch" ColumnName="Moch" />
+          <ScalarProperty Name="TypeOfDriveId" ColumnName="TypeOfDriveId" />
+          <ScalarProperty Name="EngineTypeId" ColumnName="EngineTypeId" />
+          <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="ModelId" ColumnName="ModelId" />
+          <ScalarProperty Name="ManufactId" ColumnName="ManufactId" />
+          <ScalarProperty Name="VIN" ColumnName="VIN" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CarHistory">
+      <EntityTypeMapping TypeName="GBBD_DatabaseModel.CarHistory">
+        <MappingFragment StoreEntitySet="CarHistory">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CarId" ColumnName="CarId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Color">
+      <EntityTypeMapping TypeName="GBBD_DatabaseModel.Color">
+        <MappingFragment StoreEntitySet="Color">
+          <ScalarProperty Name="ColorNameEn" ColumnName="ColorNameEn" />
+          <ScalarProperty Name="NameEn" ColumnName="NameEn" />
+          <ScalarProperty Name="IsMettalic" ColumnName="IsMettalic" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ColorNum" ColumnName="ColorNum" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -13,6 +49,14 @@
     <EntitySetMapping Name="Company">
       <EntityTypeMapping TypeName="GBBD_DatabaseModel.Company">
         <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EngineType">
+      <EntityTypeMapping TypeName="GBBD_DatabaseModel.EngineType">
+        <MappingFragment StoreEntitySet="EngineType">
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
@@ -42,6 +86,22 @@
     <EntitySetMapping Name="Job">
       <EntityTypeMapping TypeName="GBBD_DatabaseModel.Job">
         <MappingFragment StoreEntitySet="Job">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Manufact">
+      <EntityTypeMapping TypeName="GBBD_DatabaseModel.Manufact">
+        <MappingFragment StoreEntitySet="Manufact">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModelCar">
+      <EntityTypeMapping TypeName="GBBD_DatabaseModel.ModelCar">
+        <MappingFragment StoreEntitySet="ModelCar">
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
@@ -79,9 +139,18 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="TypeOfDrive">
+      <EntityTypeMapping TypeName="GBBD_DatabaseModel.TypeOfDrive">
+        <MappingFragment StoreEntitySet="TypeOfDrive">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="User">
       <EntityTypeMapping TypeName="GBBD_DatabaseModel.User">
         <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="DateBorn" ColumnName="DateBorn" />
           <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="Photo" ColumnName="Photo" />
           <ScalarProperty Name="Email" ColumnName="Email" />
