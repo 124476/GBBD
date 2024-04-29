@@ -26,6 +26,7 @@
     <EntitySetMapping Name="CarHistory">
       <EntityTypeMapping TypeName="GBBD_DatabaseModel.CarHistory">
         <MappingFragment StoreEntitySet="CarHistory">
+          <ScalarProperty Name="Date" ColumnName="Date" />
           <ScalarProperty Name="Comment" ColumnName="Comment" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
           <ScalarProperty Name="CarId" ColumnName="CarId" />

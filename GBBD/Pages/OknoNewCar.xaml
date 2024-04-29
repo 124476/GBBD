@@ -36,10 +36,12 @@
             <ComboBox Name="ComboEngineTypes" FontSize="17" DisplayMemberPath="Name" Margin="0,0,0,10" SelectedItem="{Binding EngineType}"></ComboBox>
         </StackPanel>
         <StackPanel Grid.Column="2" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0">
-            <TextBlock Text="Type Of Drive" FontSize="17"></TextBlock>
-            <ComboBox Name="ComboTypeOfDrives" FontSize="17" DisplayMemberPath="Name" Margin="0,0,0,10" SelectedItem="{Binding TypeOfDrive}"></ComboBox>
             <TextBlock Text="Color" FontSize="17"></TextBlock>
-            <ComboBox Name="ComboColors" FontSize="17" DisplayMemberPath="Name" Margin="0,0,0,10" SelectedItem="{Binding Color}"></ComboBox>
+            <TextBox Name="PoiskColor" TextChanged="PoiskColor_TextChanged"  FontSize="17" Margin="0,0,0,10"></TextBox>
+            <StackPanel Orientation="Horizontal" Height="30">
+                <Button x:Name="GotColor" FontSize="17" Content="П" Width="20" Click="GotColor_Click"></Button>
+                <ComboBox Name="ComboColors" FontSize="17" DisplayMemberPath="Name" SelectedItem="{Binding Color}" Foreground="{Binding Color.Name}" Width="180"></ComboBox>
+            </StackPanel>
             <TextBlock Text="Номер" FontSize="17"></TextBlock>
             <TextBlock Text="{Binding Number}" FontSize="17"></TextBlock>
             <Button Name="NewNumber" Content="Перегенерировать" FontSize="17" Click="NewNumber_Click"></Button>
@@ -60,15 +62,20 @@
             <TextBox Text="{Binding MaxSila}" FontSize="17"></TextBox>
         </StackPanel>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Grid.Column="1" Grid.Row="1">
+            <TextBlock Text="Type Of Drive" FontSize="17"></TextBlock>
+            <ComboBox Name="ComboTypeOfDrives" FontSize="17" DisplayMemberPath="Name" Margin="0,0,0,10" SelectedItem="{Binding TypeOfDrive}"></ComboBox>
             <TextBlock Text="Комментарий" FontSize="17"></TextBlock>
-            <TextBox Text="{Binding Comment}" FontSize="17" Height="120" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Visible" TextWrapping="Wrap"></TextBox>
+            <TextBox Text="{Binding Comment}" FontSize="17" Height="60" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Visible" TextWrapping="Wrap"></TextBox>
         </StackPanel>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" Grid.Column="2" Grid.Row="1">
-            <Image Height="180" Width="180" Source="{Binding Photo}"></Image>
-            <Button x:Name="GotPhoto" Click="GotPhoto_Click" FontSize="17" Content="Загрузить"></Button>
+            <Image Height="100" Width="100" Source="{Binding Photo}" Name="PhotoCar"></Image>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="GotPhoto" Click="GotPhoto_Click" FontSize="17" Content="Загрузить" Width="170"></Button>
+                <Button x:Name="RotatePhoto" Click="RotatePhoto_Click"  FontSize="17" Content="->" Width="30"></Button>
+            </StackPanel>
         </StackPanel>
         <StackPanel Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3" Grid.Row="1">
-            <Button Name="Save" FontSize="17" Click="Save_Click" Content="Добавить"></Button>
+            <Button Name="Save" FontSize="17" Click="Save_Click" Content="Сохранить"></Button>
         </StackPanel>
     </Grid>
 </Page>

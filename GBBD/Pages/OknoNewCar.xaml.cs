@@ -1,4 +1,5 @@
 ﻿using GBBD.Models;
+using GBBD.Windows;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,7 @@ namespace GBBD.Pages
         Car car;
         Car carLast;
         User user;
+        int rotateRot;
         public OknoNewCar(Car contextCar)
         {
             InitializeComponent();
@@ -91,13 +93,13 @@ namespace GBBD.Pages
 
         private void PoiskText_TextChanged(object sender, TextChangedEventArgs e)
         {
-            User user = App.DB.User.ToList().FirstOrDefault(x => x.FullName.Contains(PoiskText.Text));
+            User user = App.DB.User.ToList().FirstOrDefault(x => x.FullName.ToLower().Contains(PoiskText.Text.ToLower()));
             if (user != null && !string.IsNullOrEmpty(PoiskText.Text))
             {
                 ComboUsers.SelectedItem = user;
                 TextDate.Text = user.DateBorn.ToString();
                 NewUser.Visibility = Visibility.Hidden;
-                ComboUsers.ItemsSource = App.DB.User.ToList().Where(x => x.FullName.Contains(PoiskText.Text)).ToList();
+                ComboUsers.ItemsSource = App.DB.User.ToList().Where(x => x.FullName.ToLower().Contains(PoiskText.Text.ToLower())).ToList();
             }
             else
             {
@@ -147,6 +149,40 @@ namespace GBBD.Pages
             car.Number = GotNumber();
             DataContext = null;
             DataContext = car;
+        }
+
+        private void PoiskColor_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Color color = App.DB.Color.FirstOrDefault(x => x.Name.ToLower().Contains(PoiskColor.Text.ToLower()));
+            if (color != null)
+            {
+                ComboColors.SelectedItem = color;
+            }
+        }
+
+        private void GotColor_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new OknoColor();
+            var result = dialog.ShowDialog().GetValueOrDefault();
+            if (result)
+            {
+                ComboColors.SelectedItem = App.color;
+            }
+        }
+
+        private void RotatePhoto_Click(object sender, RoutedEventArgs e)
+        {
+            if (car.Photo != null)
+            {
+                rotateRot += 45;
+                RotateTransform rotateTransform = new RotateTransform()
+                {
+                    CenterX = 50,
+                    CenterY = 25
+                };
+                rotateTransform.Angle = rotateRot;
+                PhotoCar.RenderTransform = rotateTransform;
+            }
         }
     }
 }

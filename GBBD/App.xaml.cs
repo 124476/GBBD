@@ -16,5 +16,6 @@ namespace GBBD
     {
         public static GBBD_DatabaseEntities DB = new GBBD_DatabaseEntities();
         public static DateTime dateNow;
+        public static Models.Color color;
     }
 }

@@ -74,5 +74,10 @@ namespace GBBD.Pages
         {
             NavigationService.Navigate(new OknoCar());
         }
+
+        private void CarsHistoryBtn_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new OknoCarHistoryes());
+        }
     }
 }

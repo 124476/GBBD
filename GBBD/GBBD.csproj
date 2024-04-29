@@ -41,6 +41,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
@@ -86,6 +89,12 @@
     <Compile Include="Pages\OknoAllYD.xaml.cs">
       <DependentUpon>OknoAllYD.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\OknoCarHistoryes.xaml.cs">
+      <DependentUpon>OknoCarHistoryes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\OknoColor.xaml.cs">
+      <DependentUpon>OknoColor.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\OknoVYCopy.xaml.cs">
       <DependentUpon>OknoVYCopy.xaml</DependentUpon>
     </Compile>
@@ -110,6 +119,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\OknoCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\OknoCarHistoryes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -142,6 +155,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\OknoVY.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\OknoColor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

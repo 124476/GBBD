@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel Orientation="Horizontal" Margin="0,10,0,10" Grid.Row="0" Grid.ColumnSpan="2">
             <TextBlock Margin="10,0,10,0" FontSize="17" Text="Дата начала:"></TextBlock>
@@ -33,5 +33,18 @@
                 <DataGridTextColumn Header="Licence Number" Binding="{Binding LicenceNumber}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Canvas Name="graphCanvas" Background="White"/>
+            <TextBlock Name="DateStartText" FontSize="17" Grid.Row="1" Margin="25,0,0,0"></TextBlock>
+            <TextBlock Name="DateEndText" FontSize="17" Grid.Row="1" Grid.Column="1" Margin="70,0,0,0"></TextBlock>
+        </Grid>
     </Grid>
 </Page>

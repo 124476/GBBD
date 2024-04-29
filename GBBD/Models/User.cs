@@ -9,6 +9,7 @@
 
 namespace GBBD.Models
 {
+    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     
@@ -37,13 +38,18 @@ namespace GBBD.Models
         public string Email { get; set; }
         public byte[] Photo { get; set; }
         public string Description { get; set; }
+        [JsonIgnore]
         public Nullable<System.DateTime> DateBorn { get; set; }
+        [JsonIgnore]
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Car> Car { get; set; }
+        [JsonIgnore]
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CarHistory> CarHistory { get; set; }
+        [JsonIgnore]
         public virtual Company Company { get; set; }
+        [JsonIgnore]
         public virtual Job Job { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Ydovstvorenie> Ydovstvorenie { get; set; }

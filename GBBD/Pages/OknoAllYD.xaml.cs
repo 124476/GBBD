@@ -22,10 +22,42 @@ namespace GBBD.Pages
     /// </summary>
     public partial class OknoAllYD : Page
     {
+        DateTime? DateStar;
+        DateTime? DateEn;
         public OknoAllYD()
         {
             InitializeComponent();
-            Refresh();
+            DateStart.SelectedDate = DateTime.Now.AddYears(-10);
+            DateEnd.SelectedDate = DateTime.Now;
+        }
+
+        private void DrawGraphDiagram()
+        {
+            graphCanvas.Children.Clear();
+
+            int x1 = 50;
+            int y1 = 250;
+
+            var yds = App.DB.Ydovstvorenie.Where(x => x.StatusId == 1 && DateStar <= x.LicenceDate && x.LicenceDate <= DateEn).OrderBy(x => x.LicenceDate).ToList();
+
+            DateTime dateNow = DateStar.Value;
+
+            while (dateNow <= DateEn)
+            {
+                var dateN = dateNow.AddDays(14);
+                int kolInDay = App.DB.Ydovstvorenie.Where(x => x.StatusId == 1 && dateNow <= x.LicenceDate && x.LicenceDate <= dateN).Count() * -10;
+                Line line = new Line();
+                line.X1 = x1;
+                line.Y1 = y1;
+                line.X2 = x1 + 1;
+                line.Y2 = kolInDay + 250;
+                line.Stroke = Brushes.Red;
+                line.StrokeThickness = 2;
+                graphCanvas.Children.Add(line);
+                x1++;
+                y1 = kolInDay + 250;
+                dateNow = dateNow.AddDays(14);
+            }
         }
 
         private void DateEnd_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
@@ -36,8 +68,6 @@ namespace GBBD.Pages
         private void Refresh()
         {
             App.dateNow = DateTime.Now;
-            DateTime? DateStar;
-            DateTime? DateEn;
             if (DateStart.SelectedDate == null)
             {
                 DateStart.SelectedDate = DateTime.Now.AddYears(-10);
@@ -51,6 +81,9 @@ namespace GBBD.Pages
             DateEn = DateEnd.SelectedDate;
 
             DataVY.ItemsSource = App.DB.Ydovstvorenie.Where(x => x.StatusId == 1 && DateStar <= x.LicenceDate && x.LicenceDate <= DateEn).ToList();
+            DrawGraphDiagram();
+            DateStartText.Text = DateStar.Value.ToShortDateString();
+            DateEndText.Text = DateEn.Value.ToShortDateString();
         }
 
         private void DateStart_SelectedDateChanged(object sender, SelectionChangedEventArgs e)

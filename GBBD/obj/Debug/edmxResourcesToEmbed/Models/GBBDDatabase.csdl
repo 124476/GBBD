@@ -120,6 +120,7 @@
     <Property Name="CarId" Type="Int32" />
     <Property Name="UserId" Type="Int32" />
     <Property Name="Comment" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
     <NavigationProperty Name="Car" Relationship="GBBD_DatabaseModel.FK_CarHistory_Car" FromRole="CarHistory" ToRole="Car" />
     <NavigationProperty Name="User" Relationship="GBBD_DatabaseModel.FK_CarHistory_User" FromRole="CarHistory" ToRole="User" />
   </EntityType>

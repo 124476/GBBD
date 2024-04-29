@@ -88,3 +88,9 @@ C:\Users\Stipo6\source\repos\GBBD\GBBD\obj\Debug\GBBD.csproj.Up2Date
 C:\Users\Stipo6\source\repos\GBBD\GBBD\obj\Debug\GBBD.exe
 C:\Users\Stipo6\source\repos\GBBD\GBBD\obj\Debug\GBBD.pdb
 C:\Users\Stipo6\source\repos\GBBD\GBBD\bin\Debug\GBBD.pdb
+C:\Users\Stipo6\source\repos\GBBD\GBBD\obj\Debug\Pages\OknoCarHistoryes.g.cs
+C:\Users\Stipo6\source\repos\GBBD\GBBD\obj\Debug\Pages\OknoCarHistoryes.baml
+C:\Users\Stipo6\source\repos\GBBD\GBBD\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Stipo6\source\repos\GBBD\GBBD\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Stipo6\source\repos\GBBD\GBBD\obj\Debug\Windows\OknoColor.g.cs
+C:\Users\Stipo6\source\repos\GBBD\GBBD\obj\Debug\Windows\OknoColor.baml
