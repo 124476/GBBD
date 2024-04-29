@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GBBDMobile.Pages.PageNewDTP"
+             Title="Новое ДТП">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Место" FontSize="17"></Label>
+            <Entry x:Name="Place" FontSize="17"></Entry>
+            <Label Text="Другие жертвы" FontSize="17"></Label>
+            <Entry x:Name="Other" FontSize="17"></Entry>
+            <Label Text="Количество пострадавших" FontSize="17"></Label>
+            <Entry x:Name="OtherKol" FontSize="17"></Entry>
+            <Label Text="Классификация" FontSize="17"></Label>
+            <Picker x:Name="ComboClass" FontSize="17"></Picker>
+            <Label Text="Комментарий" FontSize="17"></Label>
+            <Entry x:Name="Comment" FontSize="17"></Entry>
+            <Label Text="Дата и время" FontSize="17"></Label>
+            <DatePicker x:Name="Date" FontSize="17"></DatePicker>
+            <Label Text="Фото" FontSize="17"></Label>
+            <Image x:Name="Photo" HeightRequest="100"></Image>
+            <Button x:Name="GotPhoto" FontSize="17" Text="Загрузить фото"></Button>
+            <Button x:Name="Save" FontSize="17" Text="Сохранить"></Button>
+            <Label Text="Участники"></Label>
+            <CollectionView x:Name="DataUsers">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Surname}" FontSize="17"></Label>
+                            <Label Text="{Binding Name}" FontSize="17"></Label>
+                            <Label Text="{Binding MiddleName}" FontSize="17"></Label>
+                            <Label Text="{Binding NumberVY}" FontSize="17"></Label>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Picker x:Name="ComboUsers" FontSize="17" SelectedIndexChanged="ComboUsers_SelectedIndexChanged" ItemDisplayBinding="{Binding Surname}"></Picker>
+            <Label Text="Машины"></Label>
+            <CollectionView x:Name="DataCars">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Number}" FontSize="17"></Label>
+                            <Label Text="{Binding NumberSvid}" FontSize="17"></Label>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Picker x:Name="ComboCars" FontSize="17" SelectedIndexChanged="ComboCars_SelectedIndexChanged" ItemDisplayBinding="{Binding Number}"></Picker>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
