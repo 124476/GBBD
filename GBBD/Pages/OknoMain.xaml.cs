@@ -72,11 +72,13 @@ namespace GBBD.Pages
 
         private void CarsBtn_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             NavigationService.Navigate(new OknoCar());
         }
 
         private void CarsHistoryBtn_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             NavigationService.Navigate(new OknoCarHistoryes());
         }
     }

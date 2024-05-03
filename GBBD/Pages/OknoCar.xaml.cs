@@ -102,6 +102,7 @@ namespace GBBD.Pages
 
         private void SetUser_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             Car car = (sender as Button).DataContext as Car;
             if (car != null)
             {

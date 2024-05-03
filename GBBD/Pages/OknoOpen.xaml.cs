@@ -31,6 +31,7 @@ namespace GBBD.Pages
 
         private void OpenBtn_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             if (Settings.Default.DateBlock + TimeSpan.FromMinutes(1) >= DateTime.Now)
             {
                 MessageBox.Show("Ограничение по времени!");

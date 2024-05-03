@@ -27,6 +27,7 @@ namespace GBBD.Windows
 
         private void TextBlock_MouseUp(object sender, MouseButtonEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             Models.Color color = (sender as TextBlock).DataContext as Models.Color;
             if (color != null)
             {

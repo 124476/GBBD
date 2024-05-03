@@ -93,6 +93,7 @@ namespace GBBD.Pages
 
         private void PoiskText_TextChanged(object sender, TextChangedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             User user = App.DB.User.ToList().FirstOrDefault(x => x.FullName.ToLower().Contains(PoiskText.Text.ToLower()));
             if (user != null && !string.IsNullOrEmpty(PoiskText.Text))
             {
@@ -111,6 +112,7 @@ namespace GBBD.Pages
 
         private void GotPhoto_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             var dialog = new OpenFileDialog() { Filter = "*.png; | *.png;" };
             if (dialog.ShowDialog().GetValueOrDefault())
             {
@@ -127,6 +129,7 @@ namespace GBBD.Pages
 
         private string GotNumber()
         {
+            App.dateNow = DateTime.Now;
             string num;
             while (true)
             {
@@ -146,6 +149,7 @@ namespace GBBD.Pages
 
         private void NewNumber_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             car.Number = GotNumber();
             DataContext = null;
             DataContext = car;
@@ -162,6 +166,7 @@ namespace GBBD.Pages
 
         private void GotColor_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             var dialog = new OknoColor();
             var result = dialog.ShowDialog().GetValueOrDefault();
             if (result)
@@ -172,6 +177,7 @@ namespace GBBD.Pages
 
         private void RotatePhoto_Click(object sender, RoutedEventArgs e)
         {
+            App.dateNow = DateTime.Now;
             if (car.Photo != null)
             {
                 rotateRot += 45;
